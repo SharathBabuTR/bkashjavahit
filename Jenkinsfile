@@ -11,7 +11,7 @@ stages{
 stage("build")
 {
 steps{
-sh 'mvn package -DskipTests'
+sh 'mvn -X package -DskipTests'
 }
 }
 
