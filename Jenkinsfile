@@ -13,13 +13,13 @@ stage("test")
 
 {
 steps{
-sh 'mv test'
+sh 'mvn test'
 }
 }
 stage("build")
 {
 steps{
-sh 'mv package'
+sh 'mvn package'
 }
 }
 
