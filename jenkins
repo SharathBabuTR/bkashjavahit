@@ -1,0 +1,21 @@
+pipeline{
+agent any
+
+stages{
+
+stage("test")
+
+{
+steps{
+sh 'mv test'
+}
+}
+stage("build")
+{
+steps{
+sh 'mv package'
+}
+}
+
+}
+}
